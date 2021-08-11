@@ -4,18 +4,33 @@
     "strategy": {
       "name": "contract-call",
       "params": {
-        "address": "0xC4323faB07b6944Bf8d06B33fFf398a21D6CA207",
+        "address": "0x9712Bb50DC6Efb8a3d7D12cEA500a50967d2d471",
+        "args": [
+          "%{address}",
+          "0xCDfF066eDf8a770E9b6A7aE12F7CFD3DbA0011B5",
+          "0x967da4048cD07aB37855c090aAF366e4ce1b9F48"
+        ],
         "decimals": 18,
-        "symbol": "KUN",
+        "symbol": "OCEAN",
         "methodABI": {
           "inputs": [
             {
               "internalType": "address",
-              "name": "voter",
+              "name": "provider",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "poolToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "reserveToken",
               "type": "address"
             }
           ],
-          "name": "votesOf",
+          "name": "totalProviderAmount",
           "outputs": [
             {
               "internalType": "uint256",
@@ -28,10 +43,8 @@
         }
       }
     },
-    "network": "97",
-    "addresses": [
-      "0xeF8305E140ac520225DAf050e2f71d5fBcC543e7"
-    ],
-    "snapshot": 3596310
+    "network": "1",
+    "addresses": ["0x5D2B315C465e133a346C960F46f5AA1ED88a3179"],
+    "snapshot": 13003759
   }
 ]
